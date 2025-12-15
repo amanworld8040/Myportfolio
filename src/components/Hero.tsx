@@ -8,6 +8,7 @@ import { personalInfo } from '@/data/personal';
 import TypingEffect from './TypingEffect';
 import MagneticButton from './MagneticButton';
 import ScrollIndicator from './ScrollIndicator';
+import VisitCounter from './VisitCounter';
 
 // Animated text component
 const AnimatedText = ({ text, className, delay = 0 }: { text: string; className?: string; delay?: number }) => {
@@ -128,16 +129,21 @@ export default function Hero() {
             className="text-center lg:text-left fade-in-slide-up"
           >
             <div className="mb-4 md:mb-6">
-              <AnimatedText 
-                text="Hi, I'm" 
-                className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white"
-                delay={0}
-              />
-              <AnimatedName 
-                name="Aman Rajak" 
-                className="text-4xl sm:text-5xl md:text-6xl font-bold ml-2"
-                delay={0.6}
-              />
+              <div className="flex flex-wrap items-center gap-2 mb-2">
+                <AnimatedText 
+                  text="Hi, I'm" 
+                  className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white"
+                  delay={0}
+                />
+                <AnimatedName 
+                  name="Aman Rajak" 
+                  className="text-4xl sm:text-5xl md:text-6xl font-bold"
+                  delay={0.6}
+                />
+              </div>
+              <div className="mt-3">
+                <VisitCounter />
+              </div>
             </div>
             
             <motion.h2

@@ -88,3 +88,6 @@ Desktop.ini
 .netlify
 .firebase
 
+# Visit counter data
+/data/visits.json
+
