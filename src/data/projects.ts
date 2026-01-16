@@ -17,8 +17,7 @@ export const projects: Project[] = [
       'Bi-directional API integration with ERP',
       'Deployed for 30+ active users in live production'
     ],
-    category: 'Backend',
-    githubUrl: 'https://github.com/Amanworld8040/mes-system',
+    category: 'Backend'
   },
   {
     id: '2',
@@ -34,7 +33,7 @@ export const projects: Project[] = [
       'Improved query performance by 25%'
     ],
     category: 'Backend',
-    githubUrl: 'https://github.com/Amanworld8040/training-platform',
+    githubUrl: 'https://github.com/amanworld8040/Online-Program-Allocatin-System-complete-Backend.git',
   },
 ];
 
